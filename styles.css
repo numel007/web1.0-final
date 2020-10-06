@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 200px;
+}
+
+form > * {
+    margin: 10px;
+}
+
+label {
+    text-align: center;
+}
+
+div#right-column {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    height: min-content;
+    padding: 20px;
+    align-self: center;
+}

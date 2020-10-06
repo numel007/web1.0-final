@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>Jackie Chan - Final - Web 1.0</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="left-column">
+    <section id="student-info">
+        <h1>Jackie Chan</h1>
+        <p>My favorite color is black and I wear Amari Clouds by Xero.</p>
+    </section>
+
+    <section id="data-input">
+        <h1>Font Styler</h1>
+        <form>
+        <label for="font-size">Font Size
+            <input type="number" name="font-size" id="input-size">
+        </label>
+
+        <label for="font-family">Font Family
+            <select id="select-font">
+                <option value="Helvetica">Helvetica</option>
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Georgia">Georiga</option>
+            </select>
+        </label>
+
+        <label for="font-color">Font Color
+            <!-- Instructions say to set value to #fff but I modified to #000000 since my browser wasn't accepting shortened hex values -->
+            <input type="color" name="font-color" id="input-color" value="#000000"> 
+        </label>
+
+        <label for="background-color">Background Color
+            <!-- Instructions say to set value to #fff but I modified to #ffffff since my browser wasn't accepting shortened hex values -->
+            <input type="color" name="background-color" id="input-bg-color" value="#ffffff">
+        </label>
+
+        <label for="enter-text">Enter Text
+            <textarea id="enter-text">Sample Text</textarea>
+        </label>
+
+        <label for="font-weight">Font Weight
+            <select id="font-weight">
+                <option value="bold">Bold</option>
+                <option value="bolder">Bolder</option>
+                <option value="normal">Normal</option>
+                <option value="lighter">Lighter</option>
+            </select>
+        </label>
+
+        <label for="font-style">Font Style
+            <select id="font-style">
+                <option value="normal">Normal</option>
+                <option value="italic">Italic</option>
+                <option value="oblique">oblique</option>
+            </select>
+        </label>
+
+        <label for="letter-spacing">Letter Spacing
+            <input type="number" name="letter-spacing" id="letter-spacing">
+        </label>
+
+        <label for="padding">Padding
+            <input type="number" name="padding" id="padding">
+        </label>
+        </form>
+    </section>
+    </div>
+
+    <div id="right-column">
+    <section id="headline-display">
+        <h1 id="display">Sample Text</h1>
+    </section>
+
+    <section id="data-output">
+        <pre><code>.headline {
+            font-size: <span id="show-size">16</span>px;
+            font-family: <span id="show-font">Times</span>;
+            color: <span id="show-color">#000</span>;
+            background-color: <span id="show-bg-color">#fff</span>;
+        }</code></pre>
+    </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
